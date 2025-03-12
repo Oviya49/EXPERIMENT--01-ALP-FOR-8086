@@ -1,7 +1,9 @@
 # EXPERIMENT 01 ALP FOR 8086
+```
 Name :OVIYA N
 Roll no :212223040140
 Date of experiment :12-03-2025
+```
 
 
 
