@@ -1,7 +1,7 @@
-# EXPERIMENT--01-ALP-FOR-8086
-Name :
-Roll no 
-Date of experiment :
+# EXPERIMENT 01 ALP FOR 8086
+Name :OVIYA N
+Roll no :212223040140
+Date of experiment :12-03-2025
 
 
 
@@ -76,28 +76,74 @@ Running The Emulator (emu8086) Intro 8086 Microprocessor Emulator, also known as
 
 
 ## Programs for arithmetic  operations
-
-## Addition  of 8 bit ALP 
-
-
-
-## Output  
+```
+ORG 100h      
+MOV Ax, 4001h   
+MOV Bx, 2032h   
+add  Ax, Bx 
+  
+MOV [2000h], Ax 
  
-## Subtraction   of 8 bit numbers  ALP 
+
+mov ax,[1000h]
+mov bx,[1002h]
+sub ax,bx
+mov [2002h],ax
+
+
+mov bx,2222h ;register
+mov ax,bx
+mov cx,11h
+mov dx,cx
+mul dx
+mov [2004h],ax  
+
+
+mov bx,1007h   ;indirect
+mov ax,[bx]
+mov cx,85h
+div cx
+mov [2006h],ax
+
  
-## Output  
-## Multiplication alp 
- ## Output  
+RET
+```
+## program for logical operations:
+```
+org 100h
+MOV AX,1236H;
+MOV BX,1238H;
+AND AX,BX;
+MOV [2000H],AX;
 
 
-## Division alp 
+MOV AX,2022H;
+MOV BX,2024H;
+OR AX,BX;
+MOV [2002H],AX;
 
-## Output  
 
+
+MOV AX,1112H;
+NOT AX;
+MOV [2004],AX;
+
+
+MOV AX,014H;
+MOV BX,08H;
+XOR AX,BX;
+MOV [2006H],AX;
+
+ret
+```
+## Output for arithmetic operations:
+![image](https://github.com/user-attachments/assets/2a071026-0893-49ec-b8bd-60944ae89f40)
+## Output for logical operations:
+![image](https://github.com/user-attachments/assets/335dd957-2674-4f04-b60a-b454691152af)
 
 ## Result :
  
-
+Thus the program for ALP on fundamental arithmetic and logical operations using emu8086 was executed successfully.
 
 
 
